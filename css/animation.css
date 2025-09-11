@@ -119,20 +119,26 @@
     }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circular-image-container {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
 }
 
-.spin-continuous {
-  animation-name: spin;
-  animation-duration: 4s; /* Time for one full spin */
-  animation-iteration-count: 1; /* Stop after one spin */
-  animation-timing-function: linear; /* Ensures consistent speed */
+.circular-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Dynamic Project Card Hover */
