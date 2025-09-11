@@ -39,21 +39,6 @@
     width: 100%; /* Expand the underline to 100% on hover */
 }
 
-.content img {
-  transition: transform 0.5s ease; /* Remove the filter transition and property */
-}
-
-/* Image zoom and grayscale effect */
-.content img {
-    transition: transform 0.5s ease, filter 0.5s ease;
-    /* No filter change is needed here */
-}
-
-.content img:hover {
-  transform: scale(1.05);
-  /* No filter change is needed here */
-}
-
 /* Headings slide-in effect */
 @keyframes slideInFromLeft {
     from {
@@ -106,18 +91,6 @@
 .content p:nth-child(7), .content p:nth-child(8) { animation-delay: 0.8s; }
 .content p:nth-child(9), .content p:nth-child(10) { animation-delay: 1.0s; }
 .content form { animation-delay: 1.2s; }
-
-/* The fadeInUp keyframes */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .circular-image-container {
     width: 350px;
